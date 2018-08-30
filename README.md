@@ -1,5 +1,5 @@
 # SteamKeyActivator
-### A simple steam app to activate steam key on the go !
+### A simple android app to activate steam key on the go !
 
 
 ## Library used
