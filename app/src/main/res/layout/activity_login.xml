@@ -5,44 +5,43 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".LoginActivity">
+        tools:context=".LoginActivity" tools:layout_editor_absoluteY="81dp">
 
     <TextView
             android:text="Login to Steam"
-            android:layout_width="0dp"
+            android:layout_width="165dp"
             android:layout_height="0dp"
             android:id="@+id/textView" android:textSize="24sp"
-            android:textStyle="bold" android:layout_marginTop="16dp" android:layout_marginBottom="63dp"
-            app:layout_constraintEnd_toEndOf="@+id/UsernameEditText"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="42dp" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/UsernameEditText" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/UsernameEditText" android:layout_marginLeft="24dp"
-            android:layout_marginStart="24dp" android:layout_marginEnd="24dp" android:layout_marginRight="24dp"/>
+            app:layout_constraintStart_toStartOf="parent"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/UsernameEditText" android:hint="Username"
-            app:layout_constraintTop_toBottomOf="@+id/textView" android:layout_marginBottom="60dp"
-            app:layout_constraintEnd_toEndOf="@+id/passwordEditText"
-            app:layout_constraintBottom_toTopOf="@+id/passwordEditText"
-            app:layout_constraintStart_toStartOf="@+id/passwordEditText"/>
+            app:layout_constraintTop_toBottomOf="@+id/textView" android:layout_marginBottom="34dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/passwordEditText"
+            app:layout_constraintStart_toStartOf="parent"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:ems="10"
             android:id="@+id/passwordEditText" android:hint="Password"
-            app:layout_constraintTop_toBottomOf="@+id/UsernameEditText" android:layout_marginEnd="71dp"
-            android:layout_marginRight="71dp" android:layout_marginBottom="51dp"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/loginButton"/>
+            app:layout_constraintStart_toStartOf="@+id/UsernameEditText"
+            app:layout_constraintTop_toBottomOf="@+id/UsernameEditText" android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/loginButton"/>
     <Button
             android:text="Login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/loginButton"
-            app:layout_constraintTop_toBottomOf="@+id/passwordEditText" android:layout_marginBottom="144dp"
-            app:layout_constraintEnd_toEndOf="@+id/passwordEditText"
-            app:layout_constraintStart_toStartOf="@+id/passwordEditText"
-            app:layout_constraintBottom_toBottomOf="parent" android:onClick="loginClick"/>
+            android:onClick="loginClick"
+            app:layout_constraintTop_toBottomOf="@+id/passwordEditText" android:layout_marginBottom="218dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 </android.support.constraint.ConstraintLayout>

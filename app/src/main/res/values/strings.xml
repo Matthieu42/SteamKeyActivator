@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Steam Key Activator</string>
+    <string name="preference_file_key">settingsPref</string>
+    <string name="login_key">login_key</string>
 </resources>
